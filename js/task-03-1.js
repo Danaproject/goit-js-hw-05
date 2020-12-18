@@ -1,20 +1,18 @@
-class Storage {
-    constructor(array) {
-        this.items = array;
-    }
+const Storage = function(array) {
+    this.items = array;
 
-    getItems() {
-        return this.items;
-    }
-    addItem(item) {
-        this.items.push(item);
-    }
-    removeItem(item) {
-        this.items.splice(this.items.indexOf(item), 1);
-    }
-}
+};
+Storage.prototype.getItems = function() {
+    return this.items;
+};
+Storage.prototype.addItem = function(item) {
+    this.items.push(item);
+};
+Storage.prototype.removeItem = function(item) {
+    this.items.splice(this.items.indexOf(item), 1);
+};
 
-const storage = new Storage([
+  const storage = new Storage([
     'Нанитоиды',
     'Пролонгер',
     'Железные жупи',
