@@ -2,7 +2,7 @@ class Car {
     static getSpecs(car) {
         console.log(`maxSpeed: ${car.maxSpeed}, speed: ${car.speed}, isOn: ${car.isOn}, distance: ${car.distance }, price: ${car.price}`);
     }
-    constructor({speed = 0, price = 0, maxSpeed = 0, isOn = false, distance = 0}) {
+    constructor({speed = 0, price, maxSpeed, isOn = false, distance = 0}) {
         this.speed = speed;
         this._price = price;
         this.maxSpeed = maxSpeed;

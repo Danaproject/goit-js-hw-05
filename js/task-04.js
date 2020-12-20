@@ -1,6 +1,6 @@
 class StringBuilder {
     constructor(str) {
-        this._value = String(str);
+        this._value = str;
     }
     get value() {
         return this._value;
